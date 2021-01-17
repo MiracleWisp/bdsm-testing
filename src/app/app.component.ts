@@ -47,5 +47,11 @@ export class AppComponent implements OnInit {
     if (this.currentStep === this.questions.length) {
       this.currentStep = 0;
     }
+
+    const question = this.questions[this.currentStep];
+
+    const ans = question.answers[question.correctAnswer];
+    question.answers = this.shuffle(question.answers);
+    question.correctAnswer = question.answers.indexOf(ans);
   }
 }
