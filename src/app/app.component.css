@@ -1,0 +1,17 @@
+.answer {
+  max-width: none;
+  height: auto;
+  white-space: normal;
+  text-align: left;
+  width: 100%;
+  line-height: 24px;
+}
+
+.answer._incorrect {
+  color: red;
+}
+
+.answer._correct {
+  color: green;
+  font-weight: 700;
+}
